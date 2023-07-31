@@ -6,7 +6,8 @@ from tkinter import messagebox
 from conexion import DAO#importamos el archivo de conexion
 
 class Ventana(Frame):
-    dao=DAO()#instanciamos dao de la clase principal DAO del archivo conexion.py
+    dao=DAO()#instanciamos dao de la clase principal DAO del archivo conexion.py 
+    #objeto de acceso a datos (en inglés: data access object, abreviado DAO) es un componente de software que suministra una interfaz común entre la aplicación y uno o más dispositivos de almacenamiento de datos
     def __init__(self,master=None):
         super().__init__(master,width=1000,height=400)
         self.master=master
